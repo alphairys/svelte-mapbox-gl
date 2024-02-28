@@ -1,0 +1,47 @@
+{
+	"name": "@alphairys/svelte-mapbox-gl",
+	"version": "0.0.1",
+  "description": "Svelte wrapper components for Mapbox GL JS",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "svelte-kit sync && svelte-package",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+  "keywords": [
+          "svelte",
+          "mapbox",
+          "mapbox-gl"
+  ],
+  "author": "alphairys",
+  "license": "MIT",
+  "dependencies": {
+    "@types/mapbox-gl": "^2.7.20",
+    "mapbox-gl": "^3.1.2",
+    "@turf/turf": "^6.5.x"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^1.0.0-next.90",
+		"@sveltejs/kit": "^1.0.0-next.587",
+		"@sveltejs/package": "^1.0.1-next.6",
+		"svelte": "^3.54.0",
+		"svelte-check": "^2.9.2",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3"
+	},
+  "files": ["package"],
+  "main": "./package/index.js",
+  "types": "./package/index.d.ts",
+  "module": "./package/index.js",
+  "exports": {
+    ".": {
+      "types": "./package/index.d.ts",
+      "svelte": "./package/index.js"
+    }
+  },
+  "svelte": "./package/index.js",
+	"type": "module"
+}
